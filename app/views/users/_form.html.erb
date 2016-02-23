@@ -13,6 +13,19 @@
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
+      
+       <%= f.label :area %>
+      <%= f.text_field :area, class: 'form-control' %>
+      
+      <%= f.label :hobby %>
+      <%= f.text_field :hobby, class: 'form-control' %>
+      
+      
+      <div class= "form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <%= f.submit class: "btn btn-sm btn-primary" %>
+        </div>
+     </div>
 
     <% end %>
   </div>
