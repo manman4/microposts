@@ -52,6 +52,25 @@
     <% end %>
   </div>
 </div>
+
+<br>
+</br>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= link_to  "followers", followers_user_path %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <h3>Followings(<%= @user.follower_users.length %>)</h3>
+    <% @user.follower_users.each do |user| %>
+      <br>
+        <%= user.name %>
+      </br>
+    <% end %>
+  </div>
+</div>
     
 
   

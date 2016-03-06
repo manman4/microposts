@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   resources :users do
     get  'followings', to: 'users#followings', on: :member
   end
+  resources :users do
+    get  'followers', to: 'users#followers', on: :member
+  end
   
   
   
