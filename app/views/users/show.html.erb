@@ -39,12 +39,7 @@
 
 <div class="row">
   <div class="col-md-8">
-    <h3>Followers(<%= @user.follower_users.length %>)</h3>
-    <% @user.follower_users.each do |user| %>
-      <br>
-        <%= user.name %>
-      </br>
-    <% end %>
+    <%= link_to  "followings", followings_user_path %>
   </div>
 </div>
 <div class="row">

@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-      @user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
   
   def update
@@ -34,6 +34,11 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
+  
+  def followings
+    @user = User.find(params[:id])
+  end
+  
 
   private
 
