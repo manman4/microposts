@@ -3,13 +3,15 @@
     <h3>Followers(<%= @user.follower_users.length %>)</h3>
     <% @user.follower_users.each do |user| %>
       <br>
-        <%= gravatar_for user %>
         <%= user.name %>
+        <%= link_to gravatar_for(user, size: 50), user %>
       </br>
       <br>
+
       </br>
-      <br>
-      </br>
+
     <% end %>
+
+        
   </div>
 </div>
